@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body style=" background-color:grey">
+    <nav>
+        <div class="nav-wrapper" style="margin-left: 50px; margin-right: 50px;">
+            <a href="#" class="brand-logo">FRIEND FINDER</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div style="background-color:white; margin:50px; padding:150px">
+        <br>
+        <h4>About You:</h4>
+        <br>
+        <h5>Name(Required)</h5>
+        <div class="form-control" class="row">
+            <div class="input-field col s6">
+                <input id="name" type="text" class="validate">
+                <label class="active" for="first_name2"></label>
+            </div>
+        </div>
+        <h5>Link to Photo Image (Required)</h5>
+        <div class="form-control" class="row">
+            <div class="input-field col s6">
+                <input id="link" type="text" class="validate">
+                <label class="active" for="link"></label>
+            </div>
+        </div>
+        <h4>Question 1</h4>
+
+        <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+        <div style="margin-right: 530px" class="input-field col s12">
+            <select class="form-control" id='question1'>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5 (Strongly Agree)</option>
+            </select>
+
+        </div>
+
+        <br>
+        <h4>Question 2</h4>
+
+        <h5>Generally speaking, you rely more on your experience than your imagination.
+        </h5>
+        <div style="margin-right: 530px" class="input-field col s12">
+            <select class="form-control" id='question2'>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5 (Strongly Agree)</option>
+            </select>
+
+        </div>
+        <br>
+        <h4>Question 3</h4>
+
+        <h5>You find it easy to stay relaxed and focused even when there is some pressure.
+        </h5>
+        <div style="margin-right: 530px" class="input-field col s12">
+            <select class="form-control" id='question3'>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5 (Strongly Agree)</option>
+            </select>
+
+        </div>
+        <br>
+        <h4>Question 4</h4>
+
+        <h5>You rarely do something just out of sheer curiosity.
+        </h5>
+        <div style="margin-right: 530px" class="input-field col s12">
+            <select class="form-control" id='question4'>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5 (Strongly Agree)</option>
+            </select>
+
+        </div>
+        <br>
+        <h4>Question 5</h4>
+
+        <h5>People can rarely upset you.
+        </h5>
+        <div style="margin-right: 530px" class="input-field col s12">
+            <select class="form-control" id='question5'>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5 (Strongly Agree)</option>
+            </select>
+
+        </div>
+        <br>
+        <h4>Question 6</h4>
+
+        <h5>It is often difficult for you to relate to other people’s feelings.
+        </h5>
+        <div style="margin-right: 530px" class="input-field col s12">
+            <select class="form-control" id='question6'>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5 (Strongly Agree)</option>
+            </select>
+
+        </div>
+        <br>
+        <h4>Question 7</h4>
+
+        <h5>In a discussion, truth should be more important than people’s sensitivities.
+        </h5>
+        <div style="margin-right: 530px" class="input-field col s12">
+            <select class="form-control" id='question7'>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5 (Strongly Agree)</option>
+            </select>
+
+        </div>
+        <br>
+        <h4>Question 8</h4>
+
+        <h5>You rarely get carried away by fantasies and ideas.
+        </h5>
+        <div style="margin-right: 530px" class="input-field col s12">
+            <select class="form-control" id='question8'>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5 (Strongly Agree)</option>
+            </select>
+
+        </div>
+        <br>
+        <h4>Question 9</h4>
+
+        <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+        </h5>
+        <div style="margin-right: 530px" class="input-field col s12">
+            <select class="form-control" id='question9'>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+                <option value="3">5 (Strongly Agree)</option>
+                </select>
+
+        </div>
+        <br>
+        <h4>Question 10</h4>
+
+        <h5>You feel more energetic after spending time with a group of people.
+        </h5>
+        <div style="margin-right: 530px" class="input-field col s12">
+            <select class="form-control" id='question10'>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5 (Strongly Agree)</option>
+            </select>
+
+        </div>
+        <br>
+        <br>
+        <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+        </button>
+        <br>
+        <br>
+        <a href="/api/friends">API Friends List</a> | <a href="https://github.com/">GitHub Repo</a></p>
+
+    </div>
+    <br>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col l6 s12">
+                    <h5 class="white-text">FRIENDS FOREVER</h5>
+                    <p class="grey-text text-lighten-4">FRIENDS ARE THE FAMILY YOU CHOOSE</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">FACEBOOK</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">REDDIT</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">TWITTER</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright
+            </div>
+        </div>
+    </footer>
+    <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <center>
+                <h3>Best Match</h3>
+            </center>
+            <hr>
+            <h4 id="matchName"></h4>
+            <img id="matchImg" alt="">
+        </div>
+        <hr>
+        <div class="modal-footer">
+            <a href="/" class="modal-action modal-close waves-effect waves-green btn-flat"> Agree</a>
+            <a href="/" class="modal-action modal-close waves-effect waves-green btn-flat"> Disagree</a>
+        </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            Materialize.updateTextFields();
+            $('select').material_select();
+            $('.modal').modal();
+        });
+
+        var $toastContent = $('<span>Please fill all the question!!</span>').add($('<button class="btn-flat toast-action">Okay</button>'));
+
+
+        $("#submit").on("click", function(event) {
+            var currentURL = window.location.origin;
+
+            event.preventDefault();
+
+            function validateForm() {
+                var isValid = true;
+                $('.form-field').each(function() {
+                    if ($(this).val() === '')
+                        isValid = false;
+                });
+                return isValid;
+            }
+
+            if ($('.form-control').val() === '') {
+                alert("Please fill out all fields before submitting!");
+            } else {
+                var newData = {
+                    name: $('#name').val().trim(),
+                    photo: $('#link').val().trim(),
+                    scores: [
+                        $("#question1").val(),
+                        $("#question2").val(),
+                        $("#question3").val(),
+                        $("#question4").val(),
+                        $("#question5").val(),
+                        $("#question6").val(),
+                        $("#question7").val(),
+                        $("#question8").val(),
+                        $("#question9").val(),
+                        $("#question10").val()
+                    ]
+                }
+
+                console.log("Before sending the post request : " + JSON.stringify(newData));
+
+                $.post(currentURL + "/api/friends", newData, function(data) {
+
+                    // Show the modal with the best match 
+                    console.log("You are inside the post");
+                    $("#matchName").text(data.name);
+                    $('#matchImg').attr("src", data.photo);
+                    $('#matchImg').attr("height", 200);
+                    $('#modal1').modal('open');
+
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>

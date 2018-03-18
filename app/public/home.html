@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">FRIEND FINDER</a>
+        </div>
+    </nav>
+
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="ff.jpg"></div>
+    </div>
+    <div class="card-panel red lighten-2">
+        <div class="section white" style="margin:10px;">
+            <div class="row container">
+                <h2 class="header">Friend Finder</h2>
+                <p class="grey-text text-darken-3 lighten-3">Answer a few basic questions. Then find the friend with the greatest compatibility!</p>
+                <a href="/survey"><button class="btn waves-effect waves-light" type="submit" name="action">Go to the survey
+                    <i class="material-icons right">send</i>
+            </button> </a>
+
+                <!-- <div class="card-panel red lighten-2">This is a card panel with a teal lighten-2 class</div> -->
+            </div>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="ff1.jpg"></div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <a style=" color:white" href="/api/friends">API Wait List</a> | <a style="color:white" href="https://github.com/">GitHub Repo</a></p>
+
+                <div class="col l6 s12">
+                    <h5 class="white-text">FRIENDS FOREVER</h5>
+                    <p class="grey-text text-lighten-4">FRIENDS ARE THE FAMILY YOU CHOOSE</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">FACEBOOK</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">REDDIT</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">TWITTER</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Copyright
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+
+</html>
