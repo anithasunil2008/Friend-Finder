@@ -14,20 +14,8 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-    <!-- Added link to CSS Style-->
-    <!--<link rel="stylesheet" type="text/css" href="../style.css">-->
-
-    <!-- Added link to Javascript-->
-    <!--<script type="text/javascript" src="../routing/apiRoutes.js"></script>
-
-	<script type="text/javascript" src="../routing/htmlRoutes.js"></script>
-
-	<script type="text/javascript" src="../server.js"></script>
-
-	<script type="text/javascript" src="../data/friends.js"></script>-->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 
@@ -174,7 +162,7 @@
         <hr>
         <div class="row">
             <div class="col-md-12">
-                <a href="/api/friends">API Friends List</a> | <a href="https://github.com/Zacsaltzman/FriendFinder">GitHub Repo</a>
+                <a href="/api/friends">API Friends List</a> | <a href="https://github.com/anithasunil2008/Friend-Finder">GitHub Repo</a>
             </div>
         </div>
     </div>
@@ -204,9 +192,6 @@
     </div>
 
     <script type="text/javascript">
-        console.log("Page was refreshed");
-
-        // Capture the form inputs 
         $("#submit").on("click", function(event) {
 
             event.preventDefault();
@@ -241,9 +226,6 @@
 
                 // AJAX post the data to the friends API. 
                 $.post(currentURL + "/api/friends", userData, function(data) {
-
-                    //    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
-
                     $("#matchName").text(data.name);
                     $('#matchImg').attr("src", data.photo);
                     $('#matchImg').attr("height", 200);
@@ -256,8 +238,6 @@
             } else {
                 alert("Please fill out all fields before submitting!");
             }
-
-            // return false;
         });
     </script>
 
