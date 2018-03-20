@@ -14,15 +14,30 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
+    <!-- Added link to CSS Style-->
+    <!--<link rel="stylesheet" type="text/css" href="../style.css">-->
+
+    <!-- Added link to Javascript-->
+    <!--<script type="text/javascript" src="../routing/apiRoutes.js"></script>
+
+	<script type="text/javascript" src="../routing/htmlRoutes.js"></script>
+
+	<script type="text/javascript" src="../server.js"></script>
+
+	<script type="text/javascript" src="../data/friends.js"></script>-->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 
 </head>
 
-<body>
-
-    <div class="container">
+<body style="background-color:indianred">
+    <center>
+        <h1 style="color:white;margin-top:50px">FRIEND FINDER</h1>
+    </center>
+    <div class="container" style=" background-color:white;  margin:120px">
 
         <div class="row">
             <div class="col-md-12">
@@ -181,7 +196,7 @@
                     <img id="matchImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Hurricane_Isabel_from_ISS.jpg/300px-Hurricane_Isabel_from_ISS.jpg" alt="">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close"><a href="/">Close</a></button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close"><a href="/" >Close</a></button>
                 </div>
             </div>
 
@@ -189,17 +204,26 @@
     </div>
 
     <script type="text/javascript">
+        console.log("Page was refreshed");
+
+        // Capture the form inputs 
         $("#submit").on("click", function(event) {
+
             event.preventDefault();
 
+            console.log("working");
+
+            // Form validation
             function validateForm() {
                 var isValid = true;
                 $('.form-control').each(function() {
                     if ($(this).val() === '')
                         isValid = false;
                 });
+
                 return isValid;
             }
+
             // If all required fields are filled
             if (validateForm() == true) {
                 console.log("valid");
@@ -209,29 +233,31 @@
                     photo: $("#image").val(),
                     scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question10").val(), ]
                 }
+
                 console.log(userData);
+
                 // Grab the URL of the website
                 var currentURL = window.location.origin;
+
                 // AJAX post the data to the friends API. 
                 $.post(currentURL + "/api/friends", userData, function(data) {
+
                     //    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
+
                     $("#matchName").text(data.name);
                     $('#matchImg').attr("src", data.photo);
                     $('#matchImg').attr("height", 200);
+
                     // Show the modal with the best match 
                     $("#resultsModal").show();
+
                 });
+
             } else {
                 alert("Please fill out all fields before submitting!");
             }
 
             // return false;
-        });
-        $("#close").on("click", function() {
-            $("#resultsModal").hide();
-        });
-        $(".close").on("click", function() {
-            $("#resultsModal").hide();
         });
     </script>
 
