@@ -1,4 +1,4 @@
-var friends = require("../data/friends");
+var friends = require("../data/friends.js");
 
 // ===============================================================================
 // ROUTING
@@ -32,6 +32,8 @@ module.exports = function(app) {
         console.log(sumArray);
         friendIndex = indexOfMin(sumArray);
         console.log("Best Match Friend Index: " + friendIndex);
+
+        friends.push(user);
         // console.log(friends[friendIndex]);
         res.json(friends[friendIndex]);
     });
